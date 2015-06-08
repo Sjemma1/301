@@ -1,0 +1,41 @@
+<!-- removed downvote, changed to Likes and reorder items -->
+<template name="comment_item_weld">
+  <li class="comment module comment-displayed" id="{{_id}}">
+      {{#if isDeleted}}
+      {{else}}
+       <div class="comment-body">
+        <div class="comment-content">
+          <div class="comment-main">
+            <div class="comment-text markdown">{{{htmlBody}}}</div>
+            <a class="authorname onum" href="{{profileUrl}}" data-username="— {{authorName}}, {{timeAgo ago}}">
+              {{>avatar}}
+            </a>
+            <div class="comment-meta">
+              <div class="comment-actions">
+<!--                 {{#if upvoted}}
+    <span class="upvote-link upvoted"><a href="#">Liked</a></span>
+{{else}}
+<span class="upvote-link not-upvoted"><a href="#">{{_ "Like"}}</a></span>
+{{/if}} -->
+                <span class="points">{{baseScore}} <span class="unit">{{likesUnitDisplayText}}</span></span>
+                <a href="{{pathFor route='comment_reply' _id=_id}}" class="comment-reply goto-comment">{{_ "reply"}}</a>
+                {{#if canEdit this}}
+                <span class="edit-post"><a href="{{pathFor route='comment_edit' _id=_id}}">{{_ "edit"}}</a></span>
+                {{/if}}
+              </div> <!-- comment-actions -->
+            </div> <!-- comment-meta -->
+          </div> <!-- comment-main -->
+        </div> <!-- comment-content -->
+    {{#if showChildComments}}
+      <ul class="comment-children comment-list">
+      {{#each childComments}}
+        {{#with this}}
+          {{> UI.dynamic template=comment_item}}
+        {{/with}}
+      {{/each}}
+      </ul>
+      {{/if}}
+    </div> <!-- comment-body -->
+  {{/if}}
+  </li>
+</template>

@@ -1,0 +1,186 @@
+$header-height: 70px;
+$mobile-header-height: $header-height - 20px;
+
+.mobile-only {
+  @include large {
+    display: none !important;
+  }
+}
+
+.desktop-only {
+  @include small {
+    display: none !important;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.full-screen {
+  height: 100vh;
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.max-width {
+  max-width: 40rem;
+}
+
+.absolute-center {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.center {
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.horizontal-center {
+  justify-content: center;
+}
+
+.vertical-center {
+  align-items: center;
+}
+
+.optical {
+  transform: translateY(-5%);
+}
+
+.justified {
+  justify-content: space-between;
+  @include small {
+    flex-direction: column;
+  }
+}
+
+.space-around {
+  justify-content: space-around;
+  @include small {
+    flex-direction: column;
+  }
+}
+
+.space-between {
+  justify-content: space-between;
+  @include small {
+    flex-direction: column;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.srollable {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.srollable-horizontal {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.srollable-vertical {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.visible {
+  display: block;
+}
+
+.subdued {
+  opacity: 0.5;
+}
+
+.darker {
+  color: $dark-grey;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.underline {
+  border-bottom: 1px solid $grey;
+  display: inline-block;
+  height: 14px;
+  @include small {
+    height: 16px;
+  }
+}
+
+.block {
+  display: block;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.top-right { // parent needs relative positioning
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  @include small {
+    margin-right: 0;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#spinner {
+  margin: 100px 0;
+}
+
+.debug {
+  display:none;
+}
+
+#login-buttons .loading {
+  display:none;
+}
+
+#loading, 
+.loading-page {
+  height: 300px;
+}

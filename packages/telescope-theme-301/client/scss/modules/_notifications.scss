@@ -1,0 +1,48 @@
+.notification-icon {
+  fill: $primary-color;
+  vertical-align: top;
+}
+
+.notifications-link:hover {
+  opacity: 1;
+}
+
+.notifications-menu {
+  text-align: left;
+
+  .dropdown-menu {
+    left: auto;
+    width: 100%;
+
+    a.mark-as-read {
+      color: white;
+    }
+
+    menu {
+      padding-bottom: 1rem;
+    }
+  }
+
+  .notification-item {
+    margin-bottom: 1rem;
+    font-size: 16px;
+    &:last-child {
+      border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
+    }
+  }
+
+  .notification-html {
+    a {
+      display: inline;
+      text-decoration: underline;
+    }
+  }
+
+  .notification-timestamp {
+    color: $middle-grey;
+    font-size: 12px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    display: block;
+  }
+}

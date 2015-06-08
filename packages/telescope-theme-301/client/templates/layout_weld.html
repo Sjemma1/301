@@ -1,0 +1,21 @@
+<!-- overwritten to move nav and mobile_nav outside of outer-wrapper -->
+
+<template name="layoutWeld">
+{{> UI.dynamic template=messages}}
+{{#each heroModules}}
+  {{> UI.dynamic template=getTemplate}}
+{{/each}}
+  <div class="grid-wrap">
+    {{#if canView}}
+      {{> sidebar}}
+    {{/if}}
+    <main class="content-wrap column">
+      {{#if isLoggedIn}}
+        {{> UI.dynamic template=nav}}
+      {{/if}}
+      <div class="content column {{pageName}}">
+        {{> yield}}
+      </div> <!-- page-wrap -->
+    </main> <!-- main column-->
+  </div> <!-- container row -->
+</template>

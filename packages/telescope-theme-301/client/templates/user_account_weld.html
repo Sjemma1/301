@@ -1,0 +1,158 @@
+<!-- removed Github, added Instagram, Phone, Email, View and Save links, and fieldset-heading classes -->
+<template name="userAccountWeld">
+  <div class="grid-small grid-module dialog user-edit">
+  {{#if profileIncomplete}}
+    <div>
+      {{_ "please_complete_your_profile_below_before_continuing"}}
+    </div>
+    {{/if}}
+
+    <form id="account-form">
+      <h2 class="fieldset-heading">{{_ "account"}}</h2>
+      <div class="form-actions top-right">
+        <a href="{{profileUrl}}">View</a>
+        <input type="submit" class="save-button" value="{{_ "Save"}}" />
+      </div>
+
+      <div class="control-group">
+        <label>{{_ "username"}}</label>
+        <div class="controls">
+          <input id="username" name="username" disabled="disabled" type="text" value="{{userName}}" />
+        </div>
+        <p class="note">Profile URL: {{profileUrl}}</p>
+      </div>
+
+      <div class="control-group">
+        <label>Voor en achternaam</label>
+        <div class="controls">
+          <input name="name" type="text" value="{{profile.name}}" />
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label>Wie ben jij?<!-- {{_ "bio"}} --></label>
+        <div class="controls"><textarea name="bio" type="text" placeholder="Een beschrijving wat je doen en waarom.">{{profile.bio}}</textarea></div>
+      </div>
+
+      <div class="control-group">
+      <label>Woonplaats</label>
+        <div class="controls">
+          <input name="location" type="text" value="{{profile.location}}" placeholder="Wat noem jij thuis?" />
+        </div>
+      </div>
+
+      {{#unless profile.membership}}
+      <fieldset class="control-group fieldset">
+        <label class="control-label">Account</label>
+        <div class="radio-wrap">
+          <input class="input" type="radio" id="student" name="membership" value="Student" />
+          <label class="radio-label" for="student">Student</label>
+        </div>
+        <div class="radio-wrap">
+          <input class="input" type="radio" id="opdrachtgever" name="membership" value="Opdrachtgever" />
+          <label class="radio-label" for="opdrachtgever">Opdrachtgever</label>
+        </div>
+<!--         <div class="radio-wrap">
+  <input class="input" type="radio" id="digital" name="membership" value="Digital" />
+  <label class="radio-label" for="digital">Digital</label>
+</div> -->
+      </fieldset>
+      {{else}}
+      <div class="control-group">
+        <label>Account</label>
+        <input type="text" value="{{profile.membership}}" disabled="disabled" />
+        </div>
+      {{/unless}}
+
+      <div class="control-group">
+        <label>{{_ "email"}}</label>
+        <div class="controls">
+          <input name="email" type="text" value="{{userEmail}}" />
+        </div>
+      </div>
+
+      <div class="control-group">
+      <label>Wat zijn jou vaardigheden? Welk type klussen?</label>
+        <div class="controls row justified">
+          <input class="inline hyphenated" name="skill1" type="text" value="{{profile.skill1}}" placeholder="e.g. Javascript"/>
+          <input class="inline hyphenated" name="skill2" type="text" value="{{profile.skill2}}" placeholder="e.g. Grafisch ontwerp"/>
+          <input class="inline hyphenated" name="skill3" type="text" value="{{profile.skill3}}" placeholder="e.g. Wordpress"/>
+        </div>
+        <p class="note">Probeer deze ajb kort te houden.</p>
+      </div>
+
+      <div class="control-group">
+      <label>Telefoonnummer</label>
+        <div class="controls">
+          <input name="phone" type="text" value="{{profile.phone}}" placeholder="Alleen zichtbaar voor andere gebruikers." />
+        </div>
+      </div>
+
+      <div class="control-group">
+      <label>Dribbble</label>
+        <div class="controls">
+          <input name="instagram" type="text" value="{{profile.instagram}}" placeholder="Geen @ nodig."/>
+        </div>
+      </div>
+
+      <div class="control-group">
+      <label>Twitter</label>
+        <div class="controls">
+          <input name="twitter" type="text" value="{{getTwitter}}" placeholder="Geen @ nodig." />
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label>{{_ "site_url"}}</label>
+        <div class="controls">
+          <input name="site" type="text" value="{{profile.site}}" placeholder="Met of zonder 'http://www' werkt allebei ;-)."/>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label>Geboortedatum</label>
+        <div class="controls">
+          <input name="birthday" type="date" placeholder="MM/DD/YYYY" value="{{profile.birthday}}"/>
+        </div>
+      </div>
+
+      {{#if hasPassword}}
+        <h3 class="fieldset-heading">{{_ "change_password"}}</h3>
+        <div class="control-group">
+          <label>{{_ "old_password"}}</label>
+          <div class="controls"><input name="old_password" type="password" value="" /></div>
+        </div>
+        <div class="control-group">
+          <label>{{_ "new_password"}}</label>
+          <div class="controls"><input name="new_password" type="password" value="" /></div>
+        </div>
+      {{/if}}
+
+      <div class="control-group">
+        <label class="control-label">{{_ "email_notifications"}}</label>
+        <div class="controls">
+          {{#if isAdmin}}
+            <label class="checkbox">
+              <input id="notifications_users" type="checkbox" name="notifications_users" {{hasNotificationsUsers}} /> {{_ "new_users"}}
+            </label>
+          {{/if}}
+          <label class="checkbox">
+            <input id="notifications_posts" type="checkbox" name="notifications_posts" {{hasNotificationsPosts}} /> {{_ "new_posts"}}
+          </label>
+          <label class="checkbox">
+            <input id="notifications_comments" type="checkbox" name="notifications_comments" {{hasNotificationsComments}} /> {{_ "comments_on_my_posts"}}
+          </label>
+          <label class="checkbox">
+            <input id="notifications_replies" type="checkbox" name="notifications_replies" {{hasNotificationsReplies}} /> {{_ "replies_to_my_comments"}}
+          </label>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <a href="/forgot-password">{{_ "forgot_password"}}</a>
+        <input type="submit" class="button" value="{{_ "submit"}}" />
+      </div>
+
+    </form>
+    </div>
+</template>

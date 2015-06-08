@@ -1,0 +1,29 @@
+<template name="sidebar">
+  <nav class="sidebar">
+    <div class="close-icon mobile-only">×</div>
+    {{#if isDesktop}}{{> UI.dynamic template=logo}}{{/if}}
+    <ul class="sidebar-menu srollable-vertical no-scrollbar">
+      <li>{{> searchWeld}}</li>
+      <li><a href="#">{{> notificationsMenuWeld}}</a></li>
+
+      <li><a class="btn-outlined sidebar-btn" href="/submit">Klus toevoegen</a></li>
+
+<!--       {{#if isLoggedIn}}
+<li><a class="btn-outlined sidebar-btn" href="/submit">Klus toevoegen</a></li>
+{{else}}
+<li><a class="btn-outlined sidebar-btn" href="/sign-in">Klus toevoegen</a></li>
+{{/if}} -->
+      {{#each primaryNav}}
+        <li>
+          {{> UI.dynamic template=getTemplate}}
+        </li>
+      {{/each}}
+      {{#if isLoggedIn}}
+        <li><a href="{{profileUrl}}">{{displayName}}</a></li>
+        <li><a href="/sign-out">Uitloggen</a></li>
+      {{else}}
+        <li><a href="/sign-in">Inloggen</a></li>
+      {{/if}}
+    </ul>
+  </nav>
+</template>

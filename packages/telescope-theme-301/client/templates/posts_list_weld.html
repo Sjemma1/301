@@ -1,0 +1,11 @@
+<!-- .post click handler, removed post-wrapper and before and after post items -->
+<template name="posts_list_weld">
+  <span class="desktop-only row">{{> submitButtonWeld}}</span>
+  {{> UI.dynamic template=postsListIncoming data=incoming}}
+   	<div class="posts list">
+      {{#each postsCursor}}
+        {{> UI.dynamic template=post_item}}
+      {{/each}}
+    </div>
+  {{> UI.dynamic template=postsLoadMore}}
+</template>
