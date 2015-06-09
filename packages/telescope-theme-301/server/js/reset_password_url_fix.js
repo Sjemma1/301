@@ -5,7 +5,7 @@ Meteor.startup(function () {
       return "Welkom bij 301 REDIRECT, " + user.profile.name;
   };
   Accounts.emailTemplates.resetPassword.text = function(user, url) {
-    var url = url.replace('welderwire.co//', 'welderwire.co/');
+    var url = url.replace('301.cmdamsterdam.nl/', '301.cmdamsterdam.nl/');
     return "Klik deze link om je wachtwoord te resetten: " + url;
   };
 });
