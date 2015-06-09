@@ -26,6 +26,14 @@
   </div>
   <div class="profile">
       {{> UI.dynamic template=postProfileWeld}}
+
+
+      <div class="profile_info">
+        <i class="fa fa-envelope-o"> {{profileEmail}}</i>
+        <i class="fa fa-twitter"> {{profileTwitter}}</i>
+        <i class="fa fa-dribbble"> </i>
+      </div>
+
       <div class="test" style="background-color:blue">
 
       	<h1>Uit project invoerveld</h1>
@@ -45,6 +53,7 @@
       	{{/if}}
         <div class="bio">{{authorBio}}</div>
         <div class="profile.bio">{{profile.bio}}</div>
+        <div class="profile.bio2"></div>
       	<br>
       	<div class="member-name">
       	{{#if profile.name}}
@@ -52,6 +61,8 @@
       	{{else}}
       		{{username}}
       	{{/if}}
+
+        {{profileUrl}}
 
       	</div>
       	</div>
