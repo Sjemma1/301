@@ -1,3 +1,3 @@
-Template[getTemplate('postProfileWeld')].helpers({
-
-});
+// Template[getTemplate('postProfileWeld')].helpers({
+//
+// });
