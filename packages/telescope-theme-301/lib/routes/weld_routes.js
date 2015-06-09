@@ -1,11 +1,3 @@
-// Join Promo Page TODO: move to static hosting at join.weld.co?
-// Router.route('/join', {
-//   name: 'join',
-//   loadingTemplate: 'loadingWeld',
-//   template: getTemplate('join'),
-//   layoutTemplate: 'blankLayout'
-// });
-
 // Members Page
 Router.route('/profielen', {
   name: 'members',
@@ -19,16 +11,6 @@ Router.route('/profielen', {
   },
   fastRender: true
 });
-
-// Dallas Calendar Bookings
-// Router.route('/dallas-bookings', {
-//   name: 'dallasBookings',
-//   loadingTemplate: 'loadingWeld',
-//   template: getTemplate('calendarDallas'),
-//   data: function() {
-//     return Meteor.user();
-//   },
-// });
 
 // More info Route
 Router.route('/meer-info', {
@@ -69,23 +51,3 @@ Router.route('/', {
     return Meteor.user();
   },
 });
-
-// Nasvhille Calendar Bookings
-// Router.route('/nashville-bookings', {
-//   name: 'nashvilleBookings',
-//   loadingTemplate: 'loadingWeld',
-//   template: getTemplate('calendarNashville'),
-//   data: function() {
-//     return Meteor.user();
-//   },
-// });
-
-// Instagram Authentication
-// Router.route('/instagram', {
-//   name: 'instagram',
-//   loadingTemplate: 'loadingWeld',
-//   template: getTemplate('instagram'),
-//   data: function() {
-//     return Meteor.user();
-//   },
-// });
