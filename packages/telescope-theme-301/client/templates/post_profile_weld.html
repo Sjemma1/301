@@ -16,7 +16,7 @@
 {{else}}
   {{username}}
 {{/if}}
-{{profile.bio}}
+
 </div>
 <a href="{{profileUrl this}}" class="avatar">
 	{{> avatar userId=this shape="circle"}}
@@ -30,5 +30,8 @@
 <i class="fa fa-envelope-o">{{email}}</i>
 
 {{bedrijfsbeschrijving}}
-
+<p id="profile.bio">{{profile.bio}}</p>
+{{#if profile.bio}}
+<p class="member-blurb">{{profile.bio}}</p>
+{{/if}}
 </template>
