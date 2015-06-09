@@ -127,25 +127,62 @@ h1{
   margin-bottom: 1rem;
 }
 
-#stapopdracht {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.stap {
-    width: 50%;
-    padding: 10px;
-}
-
-.stap .circle {
+.circle {
+    float: left;
+    width: 30%;
     text-align: center;
+    clear: both;
+    margin-right: 10px;
+    border-right: 2px solid black;
+    padding-right: 1px;
+    margin-top: -20px;
+    font-weight: bold;
 }
 
-.stap h3{
+.circle h3{
+    margin-top: 10px;
+}
+
+.circle i{
+    color: #f1592a;
+}
+
+.stap{
+  height: 180px;
+}
+
+.stap p {
+    width: 100%;
+    margin-bottom: 100px;
+    margin-left: 10px;
     margin-top: 20px;
 }
+
+#stapopdracht h2 {
+    margin-bottom: 2em;
+}
+
+
+
+// #stapopdracht {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: center;
+// }
+//
+// .stap {
+//     width: 50%;
+//     padding: 10px;
+// }
+//
+// .stap .circle {
+//     text-align: center;
+// }
+//
+// .stap h3{
+//     margin-top: 20px;
+// }
 
 .faq h1{
   font-family: Visitor;
