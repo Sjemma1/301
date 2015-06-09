@@ -9,7 +9,7 @@
     {{/if}}
     <div class="post-title">
       <a href="{{postLink}}" target="{{postTarget}}">{{title}}</a>
-      <a class="author" href="{{profileUrl}}">by {{authorName}}</a>
+      <a class="author" href="{{profileUrl}}">door {{authorName}}</a>
     </div>
     <div class="post-categories-container">{{> postDomainWeld}}{{> postCategories}}</div>
     {{#if body}}
@@ -29,42 +29,47 @@
 
 
       <div class="profile_info">
-        <i class="fa fa-envelope-o"> {{profileEmail}}</i>
-        <i class="fa fa-twitter"> {{profileTwitter}}</i>
-        <i class="fa fa-dribbble"> </i>
+    {{#if profileEmail}}
+      <a href="mailto:{{profileEmail}}" target="_blank"><i class="fa fa-envelope-o"></i></a>
+        {{/if}}
+    {{#if profileTwitter}}
+  <a href="https://twitter.com/{{profileTwitter}}" target="_blank"><i class="fa fa-twitter"></i></a>
+    {{/if}}
+
+  <!--       <i class="fa fa-dribbble"> </i> -->
       </div>
 
-      <div class="test" style="background-color:blue">
+<!--       <div class="test" style="background-color:blue">
 
-      	<h1>Uit project invoerveld</h1>
-      	<i class="fa fa-facebook">{{facebook}}</i>
-      	<i class="fa fa-linkedin">{{linkedin}}</i>
-      	<i class="fa fa-google-plus">{{googleplus}}</i>
-      	<i class="fa fa-envelope-o">{{email}}</i>
-      	<p class="bedrijfbeschrijving">{{bedrijfsbeschrijving}}</p>
-      	<p class="opdrachtgever">{{opdrachtgever}}</p>
-      	<br>
-      	<h1>Uit profiel</h1>
-      	<a class="author" href="{{profileUrl}}">by {{authorName}}</a>
-      	<p class="twitter">{{profile.twitter}}</p>
-      	<p id="profile.bio">{{profile.bio}}</p>
-      	{{#if profile.bio}}
-      	<p class="member-blurb">{{profile.bio}}</p>
-      	{{/if}}
-        <div class="bio">{{authorBio}}</div>
-        <div class="profile.bio">{{profile.bio}}</div>
-        <div class="profile.bio2"></div>
-      	<br>
-      	<div class="member-name">
-      	{{#if profile.name}}
-      		{{profile.name}}
-      	{{else}}
-      		{{username}}
-      	{{/if}}
+  <h1>Uit project invoerveld</h1>
+  <i class="fa fa-facebook">{{facebook}}</i>
+  <i class="fa fa-linkedin">{{linkedin}}</i>
+  <i class="fa fa-google-plus">{{googleplus}}</i>
+  <i class="fa fa-envelope-o">{{email}}</i>
+  <p class="bedrijfbeschrijving">{{bedrijfsbeschrijving}}</p>
+  <p class="opdrachtgever">{{opdrachtgever}}</p>
+  <br>
+  <h1>Uit profiel</h1>
+  <a class="author" href="{{profileUrl}}">by {{authorName}}</a>
+  <p class="twitter">{{profile.twitter}}</p>
+  <p id="profile.bio">{{profile.bio}}</p>
+  {{#if profile.bio}}
+  <p class="member-blurb">{{profile.bio}}</p>
+  {{/if}}
+  <div class="bio">{{authorBio}}</div>
+  <div class="profile.bio">{{profile.bio}}</div>
+  <div class="profile.bio2"></div>
+  <br>
+  <div class="member-name">
+  {{#if profile.name}}
+    {{profile.name}}
+  {{else}}
+    {{username}}
+  {{/if}}
 
-        {{profileUrl}}
+  {{profileUrl}}
 
-      	</div>
-      	</div>
+  </div>
+  </div> -->
   </div>
 </template>
