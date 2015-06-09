@@ -1,7 +1,7 @@
 Package.describe({
-    summary: "Telescope WELD Theme Package",
-    version: '0.3.0',
-    name: "telescope-theme-weld"
+    summary: "Telescope 301 Theme Package build on WELD",
+    version: '0.1.0',
+    name: "telescope-theme-301"
 });
 
 Package.on_use(function (api) {

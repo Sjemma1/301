@@ -85,7 +85,6 @@ telescope-releases
 telescope-subscribe-to-posts
 
 # Custom Packages for WELD
-telescope-theme-weld
 mystor:device-detection
 archive:jquery-dotdotdot
 multiply:iron-router-progress
@@ -101,3 +100,4 @@ meteorhacks:kadira-profiler
 pauli:linkedin
 pauli:accounts-linkedin
 fourseven:scss
+telescope-theme-301

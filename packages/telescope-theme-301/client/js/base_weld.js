@@ -71,9 +71,10 @@ userProfileDisplay = [
   {
     template: 'userComments',
     order: 3
-  },
-  {
-    template: 'userUpvotedPosts',
-    order: 4
   }
+  // ,
+  // {
+  //   template: 'userUpvotedPosts',
+  //   order: 4
+  // }
 ];
