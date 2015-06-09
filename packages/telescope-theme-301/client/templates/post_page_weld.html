@@ -26,32 +26,34 @@
   </div>
   <div class="profile">
       {{> UI.dynamic template=postProfileWeld}}
-    <!--   <div class="test" style="background-color:blue">
+      <div class="test" style="background-color:blue">
 
-      <h1>Uit project invoerveld</h1>
-      <i class="fa fa-facebook">{{facebook}}</i>
-      <i class="fa fa-linkedin">{{linkedin}}</i>
-      <i class="fa fa-google-plus">{{googleplus}}</i>
-      <i class="fa fa-envelope-o">{{email}}</i>
-      <p class="bedrijfbeschrijving">{{bedrijfsbeschrijving}}</p>
-      <p class="opdrachtgever">{{opdrachtgever}}</p>
-      <br>
-      <h1>Uit profiel</h1>
-      <a class="author" href="{{profileUrl}}">by {{authorName}}</a>
-      <p class="twitter">{{profile.twitter}}</p>
-      <p id="profile.bio">{{profile.bio}}</p>
-      {{#if profile.bio}}
-      <p class="member-blurb">{{profile.bio}}</p>
-      {{/if}}
-      <br>
-      <div class="member-name">
-      {{#if profile.name}}
-        {{profile.name}}
-      {{else}}
-        {{username}}
-      {{/if}}
+      	<h1>Uit project invoerveld</h1>
+      	<i class="fa fa-facebook">{{facebook}}</i>
+      	<i class="fa fa-linkedin">{{linkedin}}</i>
+      	<i class="fa fa-google-plus">{{googleplus}}</i>
+      	<i class="fa fa-envelope-o">{{email}}</i>
+      	<p class="bedrijfbeschrijving">{{bedrijfsbeschrijving}}</p>
+      	<p class="opdrachtgever">{{opdrachtgever}}</p>
+      	<br>
+      	<h1>Uit profiel</h1>
+      	<a class="author" href="{{profileUrl}}">by {{authorName}}</a>
+      	<p class="twitter">{{profile.twitter}}</p>
+      	<p id="profile.bio">{{profile.bio}}</p>
+      	{{#if profile.bio}}
+      	<p class="member-blurb">{{profile.bio}}</p>
+      	{{/if}}
+        <div class="bio">{{authorBio}}</div>
+        <div class="profile.bio">{{profile.bio}}</div>
+      	<br>
+      	<div class="member-name">
+      	{{#if profile.name}}
+      		{{profile.name}}
+      	{{else}}
+      		{{username}}
+      	{{/if}}
 
-      </div>
-      </div> -->
+      	</div>
+      	</div>
   </div>
 </template>
