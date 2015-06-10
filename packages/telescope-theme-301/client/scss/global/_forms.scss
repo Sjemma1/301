@@ -216,7 +216,7 @@ button,
   width: 100%;
   text-transform: capitalize;
   font-family: $base-font-family;
-  background: white url(/packages/telescope-theme-weld/img/updown-icon.svg) no-repeat right 10px center;
+  background: white url(/packages/telescope-theme-301/img/updown-icon.svg) no-repeat right 10px center;
 
   &:focus {
     outline: none;
@@ -365,7 +365,7 @@ label.checkbox {
 
 .checkbox input {
   -webkit-appearance: none;
-  background: url(/packages/telescope-theme-weld/img/checkbox.svg) center no-repeat;
+  background: url(/packages/telescope-theme-301/img/checkbox.svg) center no-repeat;
   background-size: 22px;
   border: none;
   height: 25px;
@@ -377,7 +377,7 @@ label.checkbox {
   vertical-align: middle;
   &:checked {
     animation: scale-up 200ms cubic-bezier(0.5, -1, 0.25, 2);
-    background-image: url(/packages/telescope-theme-weld/img/checkbox-checked.svg);
+    background-image: url(/packages/telescope-theme-301/img/checkbox-checked.svg);
   }
 }
 
@@ -453,15 +453,15 @@ fieldset,
 }
 
 .input[type="checkbox"] {
-  background: transparent url(/packages/telescope-theme-weld/img/checkbox.svg);
+  background: transparent url(/packages/telescope-theme-301/img/checkbox.svg);
   &:checked {
-    background: transparent url(/packages/telescope-theme-weld/img/checkbox-checked.svg);
+    background: transparent url(/packages/telescope-theme-301/img/checkbox-checked.svg);
   }
 }
 
 .input[type="radio"] {
-  background: transparent url(/packages/telescope-theme-weld/img/radio.svg);
+  background: transparent url(/packages/telescope-theme-301/img/radio.svg);
   &:checked {
-    background: transparent url(/packages/telescope-theme-weld/img/radio-checked.svg);
+    background: transparent url(/packages/telescope-theme-301/img/radio-checked.svg);
   }
 }

@@ -1,6 +1,19 @@
 
 // CHILD CSS
 
+@font-face {
+    font-family: Visitor;
+    src:
+    url("/fonts/visitor.ttf");
+}
+
+h1{
+  font-family: Visitor;
+  font-size: 7em;
+  line-height: 0.6;
+  color: #f1592a;
+}
+
 .posts{
     display: -webkit-box;
     display: -webkit-flex;
@@ -98,6 +111,83 @@
   margin: 0;
 }
 }
+
+.voorwaarden h2,
+.faq h2{
+  margin-top: 2rem;
+}
+
+.faq h3{
+  font-weight: bold;
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+}
+
+.voorwaarden p{
+  margin-bottom: 1rem;
+}
+
+.circle {
+    float: left;
+    width: 30%;
+    text-align: center;
+    clear: both;
+    margin-right: 10px;
+    border-right: 2px solid black;
+    padding-right: 1px;
+    margin-top: -20px;
+    font-weight: bold;
+}
+
+.circle h3{
+    margin-top: 10px;
+}
+
+.circle i{
+    color: #f1592a;
+}
+
+.stap{
+  height: 180px;
+}
+
+.stap p {
+    width: 100%;
+    margin-bottom: 100px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+#stapopdracht h2 {
+    margin-bottom: 2em;
+}
+
+
+
+// #stapopdracht {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: center;
+// }
+//
+// .stap {
+//     width: 50%;
+//     padding: 10px;
+// }
+//
+// .stap .circle {
+//     text-align: center;
+// }
+//
+// .stap h3{
+//     margin-top: 20px;
+// }
+
+.faq h1{
+  font-family: Visitor;
+}
+
 
 /* .post-share {
   display:block;

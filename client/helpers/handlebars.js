@@ -74,6 +74,13 @@ UI.registerHelper('profileUrl', function(userOrUserId) {
     return getProfileUrl(user);
   }
 });
+// 
+// UI.registerHelper('profileUrl', function(userOrUserId) {
+//   var user = (typeof userOrUserId === 'string') ? Meteor.users.findOne(userOrUserId) :  userOrUserId;
+//   if (!!user) {
+//     return getProfileBio(user);
+//   }
+// });
 
 UI.registerHelper('userName', function(userOrUserId) {
   var user = (typeof userOrUserId === 'string') ? Meteor.users.findOne(userOrUserId) :  userOrUserId;
@@ -81,7 +88,6 @@ UI.registerHelper('userName', function(userOrUserId) {
     return getUserName(user);
   }
 });
-
 UI.registerHelper('displayName', function(userOrUserId) {
   var user = (typeof userOrUserId === 'string') ? Meteor.users.findOne(userOrUserId) :  userOrUserId;
   if (!!user) {

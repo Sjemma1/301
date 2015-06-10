@@ -323,6 +323,7 @@ getPostProperties = function (post) {
     postAuthorName : getDisplayName(postAuthor),
     postTitle : cleanUp(post.title),
     profileUrl: getProfileUrlBySlugOrId(post.userId),
+    // profileBio: getProfileBioBySlugOrId(post.userId),
     postUrl: getPostPageUrl(post),
     thumbnailUrl: post.thumbnailUrl,
     linkUrl: !!post.url ? getOutgoingUrl(post.url) : getPostPageUrl(post._id)

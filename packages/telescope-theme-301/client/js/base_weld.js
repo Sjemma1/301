@@ -4,12 +4,12 @@ viewsMenu = [
     label: 'new',
     description: 'newest_posts'
   }
-  // ,
-  // {
-  //   route: 'posts_top',
-  //   label: 'top',
-  //   description: 'most_popular_posts'
-  // },
+  ,
+  {
+    route: 'posts_top',
+    label: 'top',
+    description: 'most_popular_posts'
+  }
   // {
   //   route: 'posts_best',
   //   label: 'best',
