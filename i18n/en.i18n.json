@@ -66,7 +66,7 @@
   "invites": "Uitnodigingen",
   "email": "Email",
   "scoring": "Score",
-  "posts": "klussen",
+  "posts": "Klussen",
   "comments": "Reacties",
   "logo": "Logo",
   "extras": "Extras",
@@ -252,7 +252,7 @@
   "please_fill_in_a_headline": "Vul een titel in",
   "this_link_has_already_been_posted": "Dit adres is al een keer ingestuurd.",
   "sorry_you_cannot_submit_more_than": "Sorry, je kunt niet meer dan ",
-  "posts_per_day": " klussen per dag plaatsen",
+  "posts_per_day": "Klussen per dag",
   "someone_replied_to_your_comment_on": "Iemand heeft gereageerd op ",
   "has_replied_to_your_comment_on": " heeft gereageerd op jouw reactie op ",
   "read_more": "Verder lezen",
@@ -301,11 +301,11 @@
 
   "most_popular_posts": "De meest populaire klussen.",
   "newest_posts": "De nieuwste klussen.",
-  "highest_ranked_posts_ever": "klussen met de meeste stemmen.",
+  "highest_ranked_posts_ever": "Klussen met de meeste stemmen.",
 
   "the_profile_of": "Profiel van",
 
-  "posts_awaiting_moderation": "klussen die op goedkeuring wachten.",
+  "posts_awaiting_moderation": "Klussen die op goedkeuring wachten.",
   "future_scheduled_posts": "Ingeplande klussen.",
   "users_dashboard": "Gebruikers dashboard",
   "telescope_settings_panel": "Intellingen pagina.",
