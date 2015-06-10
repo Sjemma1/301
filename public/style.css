@@ -3,7 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-	padding-bottom: 10em;
+	padding-bottom: 5em;
 }
 
 * {
@@ -236,7 +236,7 @@ header.homepage{
 	  width: 100%;
   	position: relative;
 	overflow: hidden;
-    background: url("banner.jpg") fixed;
+    background: url("banner.jpg");
     background-position: top;
     background-size: cover;
 }
@@ -309,7 +309,7 @@ background: rgba(252,96,58,.85);
 .read-more {
   width: 33.333%;
   float: left;
-  color: #fff;
+  color: #fff !important;
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -360,11 +360,12 @@ background: rgba(252,96,58,.85);
 }
 
 .minder{
-	bottom: -58px !important;
+	bottom: -30px !important;
 }
 .read-more .photo-grid-name {
   font-size: 44px;
   font-weight: 100;
+	line-height: 2em;
 }
 .read-more .border {
   width: 100%;
@@ -397,7 +398,7 @@ background: rgba(252,96,58,.85);
   transform: translate3d(0, 100%, 0);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  font-size: 22px;
+  font-size: 1rem;
 }
 .read-more .photo-grid-title {
   -moz-transition-delay: 0.1s;
@@ -714,19 +715,31 @@ background: rgba(252,96,58,.85);
 
 .flickity-page-dots {
   bottom: 25px;
+
+}
+
+.flickity-page-dots .dot{
+		height: 15px !important;
+	width: 15px !important;
 }
 
 .flickity-page-dots .dot.is-selected {
   background: #fc603a;
 }
 
+/*
 .flickity-viewport{
 	height: 350px !important;
 }
+*/
 
 .photo-grid-row{
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.main-gallery{
+	width: 60vw !important;
 }
 
 @media screen and (max-width: 1101px) {

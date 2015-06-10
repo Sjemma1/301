@@ -23,8 +23,6 @@
   				<div class="border"></div>
   				<div class="photo-grid-title">Hugo Noorlander</div>
   			  </div>
-  			  <div class="photo-grid-bio">
-  			  </div>
   			</div>
   		</a>
 
@@ -36,16 +34,13 @@
   				<div class="border"></div>
   				<div class="photo-grid-title">David Oldenburger</div>
   			  </div>
-  			  <div class="photo-grid-bio">
-  				<div class="photo-grid-name">lear</div>
-  				</div>
   			</div>
   		</a>
 
   		<a class="read-more" href="http://www.cmd-amsterdam.nl/portfolio/catmatch/" TARGET="_blank">
   			<div class="photo-grid-photo">
   			 <img src="http://www.cmd-amsterdam.nl/wp-content/uploads/2014/06/catmatch_show-600x403.jpg" alt="" />
-  			  <div class="photo-grid-info minder meer">
+  			  <div class="photo-grid-info minder">
   				<div class="photo-grid-name">Catmatch</div>
   				<div class="border"></div>
   				<div class="photo-grid-title">Ted Godyla, Dennis Prins, Quendoline Jansen, Kristel Klaus en Daan van der Zwaag</div>
@@ -62,9 +57,6 @@
   				<div class="border"></div>
   				<div class="photo-grid-title">Dylan Vens, Britte Visser, Don van Weverwijk, Oubaid Ben Allal en Daan Tuinstra.</div>
   			  </div>
-  			  <div class="photo-grid-bio">
-  				<div class="photo-grid-name">Clear Charity</div>
-  			  </div>
   			</div>
   		</a>
 
@@ -75,9 +67,6 @@
   				<div class="photo-grid-name">SmartLock</div>
   				<div class="border"></div>
   				<div class="photo-grid-title">Thomas Harkema</div>
-  			  </div>
-  			  <div class="photo-grid-bio">
-  				<div class="photo-grid-name">SmartLock</div>
   			  </div>
   			</div>
   		</a>
@@ -90,9 +79,6 @@
   				<div class="border"></div>
   				<div class="photo-grid-title">Matthias van Turennout</div>
   			  </div>
-  			  <div class="photo-grid-bio">
-  				<div class="photo-grid-name">DATA NEJA</div>
-  			  </div>
   			</div>
   		</a>
   	</div>
@@ -100,7 +86,7 @@
 
 
 
-  <div class="main-gallery">
+  <div class="main-gallery js-flickity" data-flickity-options='{"cellAlign": "left", "contain": true, "wrapAround": true, "prevNextButtons": false, "autoPlay": 5000}' >
     <div class="gallery-cell">
       <div class="testimonial">
           <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
@@ -123,6 +109,14 @@
       </div>
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.min.js"></script>
-  	<script src="/script.js"></script>
+	
+<script>$('.main-gallery').flickity({
+  // options
+    cellAlign: 'left',
+  contain: true,
+  wrapAround: true,
+  prevNextButtons: false,
+  autoPlay: 5000
+});</script>
+  	
 </template>
