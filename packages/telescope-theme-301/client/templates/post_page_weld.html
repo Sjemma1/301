@@ -1,45 +1,42 @@
 <template name="postPageWeld">
+
+
   <div class="single-post grid">
     {{#if thumbnailUrl}}
-      <div class="post-thumbnail">
-        <a class="post-thumbnail-link {{playVideoClass}}" href="{{postLink}}" target="_blank">
-          <img class="post-thumbnail-image" src="{{thumbnailUrl}}" onerror="this.style.display='none';"/>
-        </a>
-      </div>
+    <div class="post-thumbnail">
+      <a class="post-thumbnail-link {{playVideoClass}}" href="{{postLink}}" target="_blank">
+        <img class="post-thumbnail-image" src="{{thumbnailUrl}}" onerror="this.style.display='none';" />
+      </a>
+    </div>
     {{/if}}
     <div class="post-title">
       <a href="{{postLink}}" target="{{postTarget}}">{{title}}</a>
       <a class="author" href="{{profileUrl}}">door {{authorName}}</a>
     </div>
     <div class="post-categories-container">{{> postDomainWeld}}{{> postCategories}}</div>
-    {{#if body}}
-      {{> UI.dynamic template=post_body}}
-    {{/if}}
+    {{#if body}} {{> UI.dynamic template=post_body}} {{/if}}
     <div class="post-meta srollable-horizontal no-scrollbar">
       <div class="post-upvoters">
         {{> postAvatarsWeld}}
       </div>
       {{> postInfoWeld}}
     </div>
-    {{> UI.dynamic template=comment_list}}
-    {{> UI.dynamic template=comment_form}}
+    {{> UI.dynamic template=comment_list}} {{> UI.dynamic template=comment_form}}
   </div>
   <div class="profile">
+    <div class="button_project">
       {{> UI.dynamic template=postProfileWeld}}
+    </div>
+    <div class="profile_info">
+      {{#if profileEmail}}
+      <a href="mailto:{{profileEmail}}" target="_blank">Email<i class="fa fa-envelope-o"></i></a> {{/if}} {{#if profileTwitter}}
+      <a href="https://twitter.com/{{profileTwitter}}" target="_blank">Twitter<i class="fa fa-twitter"></i></a> {{/if}}
+      <!--       <i class="fa fa-dribbble"> </i> -->
+    </div>
 
 
-      <div class="profile_info">
-    {{#if profileEmail}}
-      <a href="mailto:{{profileEmail}}" target="_blank"><i class="fa fa-envelope-o"></i></a>
-        {{/if}}
-    {{#if profileTwitter}}
-  <a href="https://twitter.com/{{profileTwitter}}" target="_blank"><i class="fa fa-twitter"></i></a>
-    {{/if}}
 
-  <!--       <i class="fa fa-dribbble"> </i> -->
-      </div>
-
-<!--       <div class="test" style="background-color:blue">
+    <!--       <div class="test" style="background-color:blue">
 
   <h1>Uit project invoerveld</h1>
   <i class="fa fa-facebook">{{facebook}}</i>

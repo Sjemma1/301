@@ -1,5 +1,5 @@
 <!-- removed description from list item -->
-<template name="categoriesMenuWeld">
+<!-- <template name="categoriesMenuWeld">
   {{#if hasCategories}}
     <div class="dropdown categories-menu header-submodule">
       <a class="categories dropdown-top-level" href="/">{{_ "Categories"}}</a>
@@ -11,5 +11,16 @@
         </ul>
       </div>
     </div>
+  {{/if}}
+</template>
+
+ -->
+
+<template name="categoriesMenuWeld">
+  {{#if hasCategories}}
+
+  {{# each categories}}
+  <li><a href="{{categoryLink}}">{{name}}</a></li>
+  {{/each}}
   {{/if}}
 </template>

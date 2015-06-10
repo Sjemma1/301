@@ -32,6 +32,16 @@ Router.route('/faq', {
   },
 });
 
+// Privacy Route
+Router.route('/privacy', {
+  name: 'privacyRedirect',
+  loadingTemplate: 'loadingWeld',
+  template: getTemplate('privacyRe'),
+  data: function() {
+    return Meteor.user();
+  },
+});
+
 // Terms Route
 Router.route('/algemene-voorwaarden', {
   name: 'termsRedirect',

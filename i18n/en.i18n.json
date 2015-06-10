@@ -3,7 +3,7 @@
   "menu": "Menu",
   "view": "Weergave",
   "top": "Top klussen",
-  "new": "Nieuwe klussen",
+  "new": "Alle klussen",
   "best": "Beste klussen",
   "digest": "Samenvatting",
   "users": "Gebruikers",
@@ -300,7 +300,7 @@
   "load_more": "Meer laden",
 
   "most_popular_posts": "De meest populaire klussen.",
-  "newest_posts": "De nieuwste klussen.",
+  "newest_posts": "Klussenoverzicht.",
   "highest_ranked_posts_ever": "Klussen met de meeste stemmen.",
 
   "the_profile_of": "Profiel van",
