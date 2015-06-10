@@ -15,5 +15,20 @@ Template[getTemplate('postPageWeld')].helpers({
   },
   postProfileWeld: function () {
 return getTemplate('postProfileWeld');
+  },
+  profileEmail: function(){
+    var user = Meteor.users.findOne(this.userId);
+    if(user)
+      return getEmail(user);
+  },
+  profileTwitter: function(){
+    var user = Meteor.users.findOne(this.userId);
+    if(user)
+      return getTwitterName(user);
   }
+  // profileDribbble: function(){
+  //   var user = Meteor.users.findOne(this.userId);
+  //   if(user)
+  //     return getTwitterName(user);
+  // }
 });
