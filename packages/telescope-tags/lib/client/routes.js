@@ -3,7 +3,7 @@ Meteor.startup(function () {
   Router.onBeforeAction(Router._filters.isAdmin, {only: ['categories']});
 
   PostsCategoryController = PostsListController.extend({
-    
+
     view: 'category',
 
     getCurrentCategory: function () {
@@ -16,7 +16,7 @@ Meteor.startup(function () {
     },
 
     getDescription: function () {
-      return this.getCurrentCategory().description;    
+      return this.getCurrentCategory().description;
     }
 
   });
@@ -35,7 +35,7 @@ Meteor.startup(function () {
   // Categories Admin
 
   Router.route('/categories', {
-    name: 'categories'
+    name: 'Categoriën'
   });
 
 
