@@ -35,7 +35,7 @@ Meteor.startup(function () {
   // Categories Admin
 
   Router.route('/categories', {
-    name: 'Categoriën'
+    name: 'categories'
   });
 
 
