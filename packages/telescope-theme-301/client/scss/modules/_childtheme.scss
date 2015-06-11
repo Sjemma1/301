@@ -113,8 +113,13 @@ h1{
 }
 
 .voorwaarden h2,
-.faq h2{
+.faq h2,
+.privacy h2{
   margin-top: 2rem;
+}
+
+.privacy h2{
+  margin-bottom: 1rem!important;
 }
 
 .faq h3{
@@ -162,6 +167,17 @@ h1{
     margin-bottom: 2em;
 }
 
+div#faqpri {
+    position: absolute;
+    bottom: 10px;
+    padding: 10px 10px 30px 0;
+    z-index: 1000;
+    height: 30px;
+    margin-bottom: -10px;
+    width: 100%;
+    color: #aaaaaa;
+    background-color: #302824;
+}
 
 
 // #stapopdracht {
