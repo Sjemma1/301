@@ -26,24 +26,24 @@ postSchemaObject = {
       type: "bootstrap-datetimepicker"
     }
   },
-  opdrachtgever: {
-    type: String,
-    label: "Opdrachtgever",
-    optional: false,
-    autoform: {
-      editable: true
-    }
-  },
-  bedrijfsbeschrijving: {
-    type: String,
-    optional: false,
-    label: "Korte beschrijving van het bedrijf of opdrachtgever",
-    max: 250,
-    autoform: {
-      type: "textarea",
-      editable: true
-    }
-  },
+  // opdrachtgever: {
+  //   type: String,
+  //   label: "Opdrachtgever",
+  //   optional: false,
+  //   autoform: {
+  //     editable: true
+  //   }
+  // },
+  // bedrijfsbeschrijving: {
+  //   type: String,
+  //   optional: false,
+  //   label: "Korte beschrijving van het bedrijf of opdrachtgever",
+  //   max: 250,
+  //   autoform: {
+  //     type: "textarea",
+  //     editable: true
+  //   }
+  // },
   title: {
     type: String,
     optional: false,
@@ -52,16 +52,16 @@ postSchemaObject = {
       editable: true
     }
   },
-  shortdescription: {
-    type: String,
-    optional: false,
-    label: "Korte beschrijving",
-    max: 250,
-    autoform: {
-      type: "textarea",
-      editable: true
-    }
-  },
+  // shortdescription: {
+  //   type: String,
+  //   optional: false,
+  //   label: "Korte beschrijving",
+  //   max: 250,
+  //   autoform: {
+  //     type: "textarea",
+  //     editable: true
+  //   }
+  // },
   body: {
     type: String,
     optional: false,
@@ -117,38 +117,38 @@ postSchemaObject = {
       editable: true
     }
   },
-  linkedin: {
-    type: String,
-    optional: true,
-    label: "Linkedin",
-    autoform: {
-      editable: true
-    }
-  },
-  facebook: {
-    type: String,
-    optional: true,
-    label: "Facebook",
-    autoform: {
-      editable: true
-    }
-  },
-  googleplus: {
-    type: String,
-    optional: true,
-    label: "Google Plus",
-    autoform: {
-      editable: true
-    }
-  },
-  email: {
-    type: String,
-    optional: false,
-    label: "Email voor correspondentie",
-    autoform: {
-      editable: true
-    }
-  },
+  // linkedin: {
+  //   type: String,
+  //   optional: true,
+  //   label: "Linkedin",
+  //   autoform: {
+  //     editable: true
+  //   }
+  // },
+  // facebook: {
+  //   type: String,
+  //   optional: true,
+  //   label: "Facebook",
+  //   autoform: {
+  //     editable: true
+  //   }
+  // },
+  // googleplus: {
+  //   type: String,
+  //   optional: true,
+  //   label: "Google Plus",
+  //   autoform: {
+  //     editable: true
+  //   }
+  // },
+  // email: {
+  //   type: String,
+  //   optional: false,
+  //   label: "Email voor correspondentie",
+  //   autoform: {
+  //     editable: true
+  //   }
+  // },
   voorwaarden: {
     type: String,
     optional: false,

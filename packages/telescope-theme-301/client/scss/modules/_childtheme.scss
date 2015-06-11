@@ -30,14 +30,21 @@ h1{
   margin: 0 auto;
 }
 
+.post:first-child {
+  border: 1px solid #EFEEEE;
+}
+
 .post {
   max-width: 23em;
   margin: 1em;
   border: 1px solid #EFEEEE;
+  height: 40em;
 }
 
-.post:first-child {
-  border: 1px solid #EFEEEE;
+@media (min-width: 1600px) {
+.posts{
+  margin: 0;
+}
 }
 
 .member {
@@ -105,12 +112,6 @@ h1{
   display: inline-block;
   z-index: 0;
 } */
-
-@media (min-width: 1600px) {
-.posts{
-  margin: 0;
-}
-}
 
 .voorwaarden h2,
 .faq h2,

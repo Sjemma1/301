@@ -3,7 +3,7 @@
   <span class="desktop-only row">{{> submitButtonWeld}}</span>
   <h1>Klussenoverzicht</h1>
   {{> UI.dynamic template=postsListIncoming data=incoming}}
-   	<div class="posts list">
+   	<div class="posts list" id="page-list">
       {{#each postsCursor}}
         {{> UI.dynamic template=post_item}}
       {{/each}}
