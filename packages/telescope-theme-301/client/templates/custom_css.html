@@ -191,6 +191,7 @@ a.back-link:hover {
   color: {{getSetting "buttonColor"}};
 }
 
+
 .posts{
     display: -webkit-box;
     display: -webkit-flex;
@@ -203,8 +204,7 @@ a.back-link:hover {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-/*   width: 59vw; */
-width: 100em;
+  width: 59vw;
   margin: 0 auto;
 }
 
@@ -212,19 +212,11 @@ width: 100em;
   max-width: 23em;
   margin: 1em;
   border: 1px solid #EFEEEE;
-  height: 50em;
 }
 
 .post:first-child {
   border: 1px solid #EFEEEE;
 }
-
-@media (min-width: 1600px) {
-.posts{
-  margin: 0;
-}
-}
-
 
 .member {
   -webkit-flex-grow: 1;
@@ -291,6 +283,13 @@ width: 100em;
   display: inline-block;
   z-index: -1;
 }
+
+@media (min-width: 1600px) {
+.posts{
+  margin: 0;
+}
+}
+
 
 </style>
 </template>
