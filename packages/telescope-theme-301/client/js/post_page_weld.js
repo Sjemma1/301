@@ -25,7 +25,18 @@ return getTemplate('postProfileWeld');
     var user = Meteor.users.findOne(this.userId);
     if(user)
       return getTwitterName(user);
+  },
+  profileBio: function(){
+    var user = Meteor.users.findOne(this.userId);
+    if(user)
+      return getBio(user);
+  },
+  profileLocation: function(){
+    var user = Meteor.users.findOne(this.userId);
+    if(user)
+      return getLocation(user);
   }
+
   // profileDribbble: function(){
   //   var user = Meteor.users.findOne(this.userId);
   //   if(user)

@@ -26,8 +26,20 @@
   <div class="profile">
     <div class="profile_info">
       {{#if profileEmail}}
-      <a href="mailto:{{profileEmail}}" target="_blank">Email<i class="fa fa-envelope-o"></i></a> {{/if}} {{#if profileTwitter}}
-      <a href="https://twitter.com/{{profileTwitter}}" target="_blank">Twitter<i class="fa fa-twitter"></i></a> {{/if}}
+      <a href="mailto:{{profileEmail}}" target="_blank"><i class="fa fa-envelope-o"></i></a>
+      {{/if}}
+
+      {{#if profileTwitter}}
+      <a href="https://twitter.com/{{profileTwitter}}" target="_blank">Twitter<i class="fa fa-twitter"></i></a>
+      {{/if}}
+<!--       {{#if profileBio}}
+<p>{{profileBio}}</p>
+{{/if}}
+
+{{#if profileLocation}}
+<p>{{profileLocation}}</p>
+{{/if}} -->
+
       <!--       <i class="fa fa-dribbble"> </i> -->
     </div>
 
