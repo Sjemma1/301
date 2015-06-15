@@ -1,6 +1,6 @@
 <template name="postPageWeld">
 
-
+<div class="row-klus">
   <div class="single-post grid">
     {{#if thumbnailUrl}}
     <div class="post-thumbnail">
@@ -24,9 +24,6 @@
     {{> UI.dynamic template=comment_list}} {{> UI.dynamic template=comment_form}}
   </div>
   <div class="profile">
-    <div class="button_project">
-      {{> UI.dynamic template=postProfileWeld}}
-    </div>
     <div class="profile_info">
       {{#if profileEmail}}
       <a href="mailto:{{profileEmail}}" target="_blank">Email<i class="fa fa-envelope-o"></i></a> {{/if}} {{#if profileTwitter}}
@@ -34,7 +31,9 @@
       <!--       <i class="fa fa-dribbble"> </i> -->
     </div>
 
-
+ <div class="button_project">
+      {{> UI.dynamic template=postProfileWeld}}
+    </div>
 
     <!--       <div class="test" style="background-color:blue">
 
@@ -69,4 +68,5 @@
   </div>
   </div> -->
   </div>
+</div>
 </template>
