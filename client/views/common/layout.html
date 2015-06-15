@@ -11,10 +11,10 @@
           {{> UI.dynamic template=getTemplate}}
         {{/each}}
         {{> yield}}
-        {{> UI.dynamic template=footer}}
       </div>
       <div class="overlay hidden"></div>
     </div>
     {{{extraCode}}}
   </div>
+	{{> UI.dynamic template=footer}}
 </template>

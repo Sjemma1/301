@@ -785,6 +785,11 @@ background: rgba(252,96,58,.65);
 	margin: 0 !important;
 }
 
+.footer.grid.static{
+	margin: auto;
+	text-align: center;
+}
+
 @media screen and (max-width: 1101px) {
     .meer{
 	bottom: -88px !important;
