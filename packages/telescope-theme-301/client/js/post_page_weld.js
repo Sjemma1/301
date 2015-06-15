@@ -35,11 +35,20 @@ return getTemplate('postProfileWeld');
     var user = Meteor.users.findOne(this.userId);
     if(user)
       return getLocation(user);
+  },
+  profileSite: function(){
+    var user = Meteor.users.findOne(this.userId);
+    if(user)
+      return getSite(user);
+  },
+  profilePhone: function(){
+    var user = Meteor.users.findOne(this.userId);
+    if(user)
+      return getPhone(user);
+  },
+  profileDribbble: function(){
+    var user = Meteor.users.findOne(this.userId);
+    if(user)
+      return getDribbble(user);
   }
-
-  // profileDribbble: function(){
-  //   var user = Meteor.users.findOne(this.userId);
-  //   if(user)
-  //     return getTwitterName(user);
-  // }
 });

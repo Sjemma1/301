@@ -25,27 +25,43 @@
   </div>
   <div class="profile">
     <div class="profile_info">
+<div class="avatar avatar-large avatar-circle" aria-hidden="true">{{> avatar userId=userId shape="circle"}}</div>
+      <h2><a  href="{{profileUrl}}">{{authorName}}</a></h2>
+
+      {{#if profileBio}}
+      <p>{{profileBio}}</p>
+      {{/if}}
+
+      {{#if profileLocation}}
+      <p>{{profileLocation}}</p>
+      {{/if}}
+
       {{#if profileEmail}}
       <a href="mailto:{{profileEmail}}" target="_blank"><i class="fa fa-envelope-o"></i></a>
       {{/if}}
 
       {{#if profileTwitter}}
-      <a href="https://twitter.com/{{profileTwitter}}" target="_blank">Twitter<i class="fa fa-twitter"></i></a>
+      <a href="https://twitter.com/{{profileTwitter}}" target="_blank"><i class="fa fa-twitter"></i></a>
       {{/if}}
-<!--       {{#if profileBio}}
-<p>{{profileBio}}</p>
-{{/if}}
 
-{{#if profileLocation}}
-<p>{{profileLocation}}</p>
+      {{#if profileSitel}}
+      <a href="{{profileSite}}" target="_blank">{{profileSitel}}</a>
+      {{/if}}
+
+      {{#if profileDribbble}}
+      <a href="{{profileDribbble}}" target="_blank"><i class="fa fa-dribbble"></i></a>
+      {{/if}}
+
+<!--       {{#if profilePhone}}
+<p>{{profilePhone}}</p>
 {{/if}} -->
 
-      <!--       <i class="fa fa-dribbble"> </i> -->
     </div>
 
  <div class="button_project">
       {{> UI.dynamic template=postProfileWeld}}
-    </div>
+</div>
+
 
     <!--       <div class="test" style="background-color:blue">
 
