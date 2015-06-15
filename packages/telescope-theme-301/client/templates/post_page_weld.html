@@ -25,8 +25,8 @@
   </div>
   <div class="profile">
     <div class="profile_info">
-      <div class="user-avatar avatar-large" aria-hidden="true">{{> avatar userId=userId shape="circle"}}</div>
-      <a class="comment-username" href="{{profileUrl}}">{{authorName}}</a>
+<div class="avatar avatar-large avatar-circle" aria-hidden="true">{{> avatar userId=userId shape="circle"}}</div>
+      <h2><a  href="{{profileUrl}}">{{authorName}}</a></h2>
 
       {{#if profileBio}}
       <p>{{profileBio}}</p>
@@ -45,16 +45,16 @@
       {{/if}}
 
       {{#if profileUrl}}
-      <a href="{{profileUrl}}" target="_blank">{{profileUrl}}</a>
+      <a href="{{profilePortfolioUrl}}" target="_blank">{{profilePortfolioUrl}}</a>
+      {{/if}}
+
+      {{#if profileDribbble}}
+      <a href="{{profileDribbble}}" target="_blank"><i class="fa fa-dribbble"></i></a>
       {{/if}}
 
 <!--       {{#if profilePhone}}
 <p>{{profilePhone}}</p>
 {{/if}} -->
-
-      {{#if profileDribbble}}
-      <a href="{{profileDribbble}}" target="_blank"><i class="fa fa-dribbble"></i></a>
-      {{/if}}
 
     </div>
 

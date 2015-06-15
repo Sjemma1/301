@@ -36,10 +36,10 @@ return getTemplate('postProfileWeld');
     if(user)
       return getLocation(user);
   },
-  profileUrl: function(){
+  profileSite: function(){
     var user = Meteor.users.findOne(this.userId);
     if(user)
-      return getUrl(user);
+      return getSite(user);
   },
   profilePhone: function(){
     var user = Meteor.users.findOne(this.userId);
