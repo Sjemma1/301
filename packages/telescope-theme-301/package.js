@@ -138,7 +138,6 @@ Package.on_use(function (api) {
     'client/templates/calendar_dallas.html',
     'client/templates/calendar_nashville.html',
     'client/templates/faq.html',
-    'client/templates/privacy.html',
     'client/templates/more_info.html',
     'client/templates/terms.html',
     'client/templates/calendar_modal.html',
