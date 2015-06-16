@@ -111,7 +111,7 @@ postSchemaObject = {
   url: {
     type: String,
     optional: true,
-    label: "Hoe wil ik ongeveer dat het eruit komt te zien? (optioneel)",
+    label: "Voeg eventueel een URL toe. Hoe wil ik ongeveer dat het eruit komt te zien? (optioneel)",
     autoform: {
       editable: true,
       type: "bootstrap-url"
