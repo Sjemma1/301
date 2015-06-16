@@ -25,7 +25,7 @@
   </div>
   <div class="profile">
     <div class="profile_info">
-<div class="avatar avatar-large avatar-circle" aria-hidden="true">{{> avatar userId=userId shape="circle"}}</div>
+<div class="avatar avatar-large avatar-circle avatar-profile-info" aria-hidden="true">{{> avatar userId=userId shape="circle"}}</div>
       <h2><a  href="{{profileUrl}}">{{authorName}}</a></h2>
 
       {{#if profileBio}}
@@ -37,11 +37,11 @@
       {{/if}}
 
       {{#if profileEmail}}
-      <a href="mailto:{{profileEmail}}" target="_blank"><i class="fa fa-envelope-o"></i></a>
+      <a href="mailto:{{profileEmail}}" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a>
       {{/if}}
 
       {{#if profileTwitter}}
-      <a href="https://twitter.com/{{profileTwitter}}" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://twitter.com/{{profileTwitter}}" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
       {{/if}}
 
       {{#if profileSitel}}
@@ -49,7 +49,7 @@
       {{/if}}
 
       {{#if profileDribbble}}
-      <a href="{{profileDribbble}}" target="_blank"><i class="fa fa-dribbble"></i></a>
+      <a href="{{profileDribbble}}" target="_blank"><i class="fa fa-dribbble fa-2x"></i></a>
       {{/if}}
 
 <!--       {{#if profilePhone}}
