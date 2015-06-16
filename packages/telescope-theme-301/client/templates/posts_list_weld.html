@@ -1,5 +1,18 @@
 <!-- .post click handler, removed post-wrapper and before and after post items -->
+<!-- <head>
+<script src="/jquery.mousewheel.js"></script>
+<script>
+$(document).ready(function() {
+  $('.posts_list_weld').mousewheel(function(e, delta) {
+      this.scrollLeft -= (delta * 40);
+      e.preventDefault();
+  });
+});
+</script>
+</head> -->
 <template name="posts_list_weld">
+
+
 <!--   <span class="desktop-only row">{{> submitButtonWeld}}</span> -->
     <h1>Klussenoverzicht</h1>
   {{> UI.dynamic template=postsListIncoming data=incoming}}
@@ -9,4 +22,5 @@
       {{/each}}
     </div>
   {{> UI.dynamic template=postsLoadMore}}
+
 </template>
