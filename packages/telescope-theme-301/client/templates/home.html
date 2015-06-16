@@ -2,10 +2,11 @@
   <header class="homepage">
   			<div class="banner-overlay">
   				<section class="homepage-text">
+
   					<h1>301 Redirect</h1>
-  					<h2>Studenten maken voor jou op verzoek de tofste <span class="typewrite" data-period="2000" data-type='[ "websites", "apps", "designs", "filmpjes", "fotos"]'></span></h2>
-					<a class="home-btn btn-outlined sidebar-btn" href="/submit">Klus toevoegen</a>
-  						<h2 class="werk">Zie hieronder wat studenten gemaakt hebben</h2>
+  					<h2>Studenten maken voor jou op verzoek de tofste <span class="element"></span></h2>
+					<a class="home-btn btn-outlined sidebar-btn" href="/meer-info">Hoe werkt het?</a>
+  						<h2 class="werk">Zie hieronder wat studenten al hebben gemaakt</h2>
   						<a  href="#studentenwerk"><i class="scrolldown">scroll down</i></a>
   				</section>
   			</div>
@@ -86,7 +87,7 @@
 
 
 
-  <div class="main-gallery js-flickity" data-flickity-options='{"cellAlign": "left", "contain": true, "wrapAround": true, "prevNextButtons": false, "autoPlay": 5000}'>
+  <div class="main-gallery js-flickity">
     <div class="gallery-cell">
       <div class="testimonial">
           <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
@@ -113,6 +114,17 @@
   </div>
 
 <script>
+	  $(function(){
+      $(".element").typed({
+        strings: ["websites", "apps", "designs", "filmpjes", "fotos"],
+        typeSpeed: 200,
+		loop: true,
+		backSpeed: 75,
+		// time before backspacing
+		backDelay: 600
+      });
+  });
+	
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -127,5 +139,14 @@ $(function() {
     }
   });
 });
+	$('.main-gallery').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true,
+  wrapAround: true, 
+  prevNextButtons: false, 
+  autoPlay: 5000
+});
 	</script>
+	
 </template>
