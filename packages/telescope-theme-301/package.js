@@ -100,7 +100,6 @@ Package.on_use(function (api) {
     'client/templates/post_content_weld.html',
     'client/templates/post_title_weld.html',
     'client/templates/post_item_weld.html',
-    'client/templates/post_item_comment_weld.html',
     'client/templates/post_thumbnail_weld.html',
     'client/templates/posts_list_weld.html',
     'client/templates/post_page_weld.html',

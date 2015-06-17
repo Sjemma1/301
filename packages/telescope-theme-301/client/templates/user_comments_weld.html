@@ -4,15 +4,15 @@
     <table>
     <thead>
       <tr>
-        <td>Verstuurde aanmelding</td>
         <td>Klus</td>
+        <td>Verstuurde aanmelding</td>
       </tr>
     </thead>
     {{#each comments}}
       <tr>
-        <!-- <td>{{{cleanUp htmlBody}}}</td> -->
-        <td><a href="/comments/{{_id}}">{{{cleanUp htmlBody}}}</a></td>
         <td><a href="{{pathFor route='post_page' _id=postId}}">{{postTitle}}</a></td>
+        <td><a href="/comments/{{_id}}">{{{cleanUp htmlBody}}}</a></td>
+        <!-- <td>{{{cleanUp htmlBody}}}</td> -->
 <!--         <td><a href="{{pathFor route='post_comment' _id=_id}}">{{postTitle}}</a></td> -->
 <!--           <td><a href="{{pathFor route='post_comment' _id=_id}}">{{{cleanUp htmlBody}}}</a></td> -->
 <!--         <td><a href="{{pathFor route='post_page' _id=postId}}/">{{postTitle}}</a></td>   -->
