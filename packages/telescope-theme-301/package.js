@@ -88,6 +88,7 @@ Package.on_use(function (api) {
     'client/templates/blank_layout.html',
     'client/templates/loading_weld.html',
     'client/templates/menu_item_weld.html',
+    'client/templates/messages_weld.html',
     'client/templates/message_item_weld.html',
     'client/templates/newsletter_banner_weld.html',
     'client/templates/no_rights_weld.html',

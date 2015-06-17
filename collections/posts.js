@@ -47,7 +47,7 @@ postSchemaObject = {
   title: {
     type: String,
     optional: false,
-    label: "Titel klus",
+    label: "Titel van de klus",
     autoform: {
       editable: true
     }
@@ -65,9 +65,28 @@ postSchemaObject = {
   body: {
     type: String,
     optional: false,
+    label: "Wat houdt de klus in?",
     autoform: {
       editable: true,
       rows: 5
+    }
+  },
+  body2: {
+    type: String,
+    optional: false,
+    label: "Wat verwacht je van de student?",
+    autoform: {
+      editable: true,
+      rows: 5
+    }
+  },
+  body3: {
+    type: String,
+    optional: false,
+    label: "Wat kan de student ermee verdienen?",
+    autoform: {
+      editable: true,
+      rows: 1
     }
   },
   // inschrijfdatum: {
@@ -92,6 +111,7 @@ postSchemaObject = {
   url: {
     type: String,
     optional: true,
+    label: "Voeg eventueel een URL toe. Hoe wil ik ongeveer dat het eruit komt te zien? (optioneel)",
     autoform: {
       editable: true,
       type: "bootstrap-url"
@@ -100,7 +120,7 @@ postSchemaObject = {
   start: {
     type: Date,
     optional: true,
-    label: "Begindatum klus",
+    label: "Wanneer gaat de klus van start? (optioneel)",
     autoform: {
       type: "date",
       class: "date-form",
@@ -110,7 +130,7 @@ postSchemaObject = {
   end: {
     type: Date,
     optional: true,
-    label: "Einddatum klus",
+    label: "Wanneer is de deadline van de klus?",
     autoform: {
       type: "date",
       class: "date-form",

@@ -1,4 +1,7 @@
 <template name="comment_list_weld">
+
+ {{#if isAdmin}}
+
   {{#each threadModules}}
     {{> UI.dynamic template=getTemplate data=..}}
   {{/each}}
@@ -7,4 +10,6 @@
       {{> UI.dynamic template=comment_item}}
     {{/each}}
   </ul>
+  {{/if}}
+
 </template>

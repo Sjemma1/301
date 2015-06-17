@@ -152,6 +152,11 @@ h1{
     color: rgb(255,205,0);
 }
 
+.markdown h3{
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
 .stap{
   height: 180px;
 }
@@ -204,6 +209,13 @@ div#faqpri {
   font-family: Visitor;
 }
 
+.datums{
+  font-size: 0.4em;
+}
+
+/* .datums span{
+  margin-right: 20px;
+} */
 
 /* .post-share {
   display:block;
