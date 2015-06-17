@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  color: #302824;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 	padding-bottom: 5em;
@@ -47,7 +48,7 @@ body {
 }
 
 header.homepage{
-	height: 90vh;
+	height: 100vh;
 	min-height: 30em;
 	  width: 100%;
   	position: relative;
@@ -59,10 +60,14 @@ header.homepage{
 
 .homepage-text{
 	color: white;
-	max-width: 55%;
+	width: 55%;
 	margin: auto;
+	max-width: 59rem;
 }
 
+h1{
+	color: rgb(255,205,0) !important;
+}
 
 .homepage-text h1{
   font-size: 6em;
@@ -81,26 +86,46 @@ header.homepage{
 }
 
 .werk{
-	font-size: 1.2rem !important;
-	max-width: 32%;
+  font-size: 1.2rem !important;
+  width: 55%;
+  max-width: 59rem;
   font-weight: lighter !important;
-	position: absolute;
-	bottom: 10%;
-	left: 34%;
-	text-align: center;
+  position: absolute;
+  bottom: 10%;
+  /* left: 35vw; */
+  text-align: center;
+  /* margin-top: 15%; */
+  /* max-width: 43em; */
 }
 
 .typewrite{
 	font-weight: 500;
 }
 .banner-overlay {
-height:90vh;
+height:100vh;
 	min-height: 30em;
   position: absolute;
   bottom: 0px;
   left: 0px;
   width: 100%;
-background: rgba(252,96,58,.65);
+  background: rgba(50,50,50,0.45);
+	  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -webkit-flex-direction:column;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home-btn{
@@ -161,7 +186,7 @@ background: rgba(252,96,58,.65);
   position: absolute;
   bottom: 0px;
   left: 0;
-  padding: 30px;
+  padding: 35px 15px;
   width: 100%;
   -moz-transform: translate3d(0, 65px, 0);
   -webkit-transform: translate3d(0, 65px, 0);
@@ -533,7 +558,7 @@ background: rgba(252,96,58,.65);
 .testimonial-author {
   display: block;
   font-weight: 800;
-  color: #fc603a;
+  color: rgb(255,205,0);
 }
 
 .flickity-page-dots {
@@ -551,7 +576,7 @@ background: rgba(252,96,58,.65);
 }
 
 .flickity-page-dots .dot.is-selected {
-  background: #fc603a;
+  background: rgb(255,205,0);
 }
 
 .flickity-viewport{
@@ -641,7 +666,7 @@ background: rgba(252,96,58,.65);
 }
 
 .avatar-profile-info .avatar-initials{
-	  background-color: #f1592a !important;
+	  background-color: #302824 !important;
   	  color: #fff !important;
 	  font-size: 2.5rem;
   	  line-height: 2 !important;
@@ -649,7 +674,7 @@ background: rgba(252,96,58,.65);
 
 .fa-2x{
 	margin: .15em !important;
-	color: #aaaaaa;
+	color: #302824;
 }
 
 .testimonial-quote{
@@ -661,13 +686,68 @@ span.edit-post.comment-submit-button.btn.btn-primary.btn-submit{
   max-width: 9em;
   float: right;
   padding: .6em;
-  background: #aaaaaa;
+  background: #302824;
+	border: none;
 }
 
 span.edit-post.comment-submit-button.btn.btn-primary.btn-submit a:hover{
 	color: white !important;
 }
+.content.column.homeRe{
+	max-width: 100vw !important;
+}
 
+.sidebar{
+	background: #EFEEEE !important;
+-webkit-box-shadow: -2px -1px 43px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px -1px 43px -12px rgba(0,0,0,0.75);
+box-shadow: -2px -1px 43px -12px rgba(0,0,0,0.75);
+}
+
+div#faqpri{
+	background-color: #EFEEEE !important;
+}
+
+.logo-wrap{
+	background-color: #EFEEEE !important;
+}
+
+button, .button, .btn, .btn-outlined{
+	background: rgb(255,204,0);
+  border: 1px solid rgb(255,204,0);
+	color: white !important;
+}
+
+.important{
+	color: rgb(255,205,0) !important;
+}
+
+.sidebar-menu li a, .sidebar-menu li a:link, .sidebar-menu li a:visited{
+	color: #302824;
+}
+
+/*
+input[type="search"].search-input-field{
+	  background: rgba(255, 205, 0, 0.6);
+}
+*/
+
+.member-rollover{
+	    background: rgba(255, 205, 0, .75);
+		z-index: 999;
+}
+
+.member .avatar .avatar-initials {
+  font-size: 3rem;
+  line-height: 95px;
+  color: white !important;
+background: #302824;
+}
+
+button.comment-submit-button.btn.btn-primary.btn-submit.sidebar-btn{
+	background: #302824 !important;
+	border: none;
+}
 
 @media screen and (max-width: 1101px) {
     .meer{
