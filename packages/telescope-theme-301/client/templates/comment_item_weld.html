@@ -12,7 +12,7 @@
             </a>
             <div class="comment-meta">
               <div class="comment-actions">
-                <span class="points">{{baseScore}} <span class="unit">{{likesUnitDisplayText}}</span></span>
+<!--                 <span class="points">{{baseScore}} <span class="unit">{{likesUnitDisplayText}}</span></span> -->
                 <a href="{{pathFor route='comment_reply' _id=_id}}" class="comment-reply goto-comment">{{_ "reply"}}</a>
                 {{#if canEdit this}}
                 <span class="edit-post"><a href="{{pathFor route='comment_edit' _id=_id}}">{{_ "edit"}}</a></span>
@@ -33,11 +33,6 @@
     </div> <!-- comment-body -->
   {{/if}}
   </li>
-
- <h2>{{authorName}} | {{_id}}</h2>
-<a href="http://localhost:3000/comments/{{_id}}">test</a>
-{{#if authorName}}
-Hallo AUTHOR
-{{/if}}
-
+<!--   <h2>{{authorName}} | {{_id}}</h2>
+ <a href="http://localhost:3000/comments/{{_id}}">Link naar comment</a> -->
 </template>
