@@ -1,6 +1,7 @@
-Accounts.onCreateUser(function(options, user){
+var userId = Accounts.onCreateUser(function(options, user){
 
   // ------------------------------ Properties ------------------------------ //
+
 
   var userProperties = {
     profile: options.profile || {},
@@ -36,6 +37,12 @@ Accounts.onCreateUser(function(options, user){
   // if this is not a dummy account, and is the first user ever, make them an admin
   user.isAdmin = (!user.profile.isDummy && Meteor.users.find({'profile.isDummy': {$ne: true}}).count() === 0) ? true : false;
 
+
+  // we wait for Meteor to create the user before sending an email
+
+
+
+
   // ------------------------------ Callbacks ------------------------------ //
 
   // run all post submit client callbacks on properties object successively
@@ -55,6 +62,22 @@ Accounts.onCreateUser(function(options, user){
   return user;
 });
 
+// Accounts.sendEnrollmentEmail(userId);
+
+// Accounts.urls.verifyEmail = function (token) {
+//   return Meteor.absoluteUrl('verify-email/' + token);
+// };
+//
+// Meteor.methods({
+//   serverVerifyEmail: function(email, userId, callback) {
+//     console.log("Email to verify:" +email + " | userId: "+userId);
+//     // this needs to be done on the server.
+//     Accounts.sendVerificationEmail(userId, [email]);
+//     if (typeof callback !== 'undefined') {
+//       callback();
+//     }
+//   }
+// })
 
 Meteor.methods({
   changeEmail: function (newEmail) {

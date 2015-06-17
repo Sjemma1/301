@@ -227,6 +227,7 @@ Package.on_use(function (api) {
   api.addFiles([
     'server/js/template_overwrites.js',
     'server/js/reset_password_url_fix.js',
+    'server/js/email_verification.js',
     'server/js/members_publication.js',
     'server/js/user_status_publication.js',
     'server/templates/emailWrapperWeld.handlebars',

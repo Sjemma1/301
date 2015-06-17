@@ -54,3 +54,12 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
+
+    Template.header.rendered = function() {
+      $('#login-sign-in-link').text('Přihlásit se ▾');
+      $('.login-close-text').text('Zavřít nabídku');
+      $('.sign-in-text-google').text('Přihlásit se přes Google');
+      $('.sign-in-text-facebook').text('Přihlásit se přes FB');
+      $('#at-forgot').text('Mdp oublié');
+      $('.at-link at-pwd').text('Wachtwoord vergeten?');
+    };
