@@ -21,6 +21,13 @@
 <a href="{{pathFor route='comment_edit' _id=_id}}">Edit</a>
 {{/if}}
  -->
+
+ <div class="datums">
+   <p>
+     <span class="startdatum"><i class="fa fa-clock-o"></i> Start datum: {{formatDate start "DD.MM.YYYY"}}</span>
+     <span class="einddatum"><i class="fa fa-clock-o"></i> Eind datum: {{formatDate end "DD.MM.YYYY"}}</span>
+   </p>
+ </div>
  </div>
     <div class="post-categories-container">{{> postDomainWeld}}{{> postCategories}}</div>
     {{#if body}} {{> UI.dynamic template=post_body}} {{/if}}

@@ -20,6 +20,7 @@
       {{/each}}
       {{#if isLoggedIn}}
         <li><a href="{{profileUrl}}">{{displayName}}</a></li>
+        <li><a href="{{pathFor 'messagesRedirect'}}">Berichten</a></li>
         <li><a href="/sign-out">Uitloggen</a></li>
       {{else}}
         <li><a href="/sign-in">Inloggen</a></li>

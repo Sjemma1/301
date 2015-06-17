@@ -52,6 +52,16 @@ Router.route('/algemene-voorwaarden', {
   },
 });
 
+// Messages Route
+Router.route('/messages', {
+  name: 'messagesRedirect',
+  loadingTemplate: 'loadingWeld',
+  template: getTemplate('messagesRe'),
+  data: function() {
+    return Meteor.user();
+  },
+});
+
 // Projects Route
 Router.route('/', {
   name: 'homeRedirect',
