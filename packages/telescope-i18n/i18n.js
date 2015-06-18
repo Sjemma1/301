@@ -6,7 +6,7 @@ setLanguage = function (language) {
   // moment
   Session.set('momentReady', false);
   // console.log('moment loading…')
-  if (language.toLowerCase() === "en") {
+  if (language.toLowerCase() === "nl") {
     Session.set('momentReady', true);
   } else {
     $.getScript("//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/lang/" + language.toLowerCase() + ".js", function (result) {

@@ -100,7 +100,7 @@ msavin:mongol@1.0.97
 multiply:iron-router-progress@1.0.1
 mystor:device-detection@0.2.0
 npm-bcrypt@0.7.8_2
-npm-container@0.0.0
+npm-container@1.0.0
 oauth@1.1.4
 oauth1@1.1.4
 oauth2@1.1.3
@@ -119,6 +119,8 @@ reload@1.1.3
 retry@1.0.3
 routepolicy@1.0.5
 rzymek:fullcalendar@2.3.1
+rzymek:moment@2.8.3_10
+rzymek:moment-locale-nl@2.9.0
 sacha:juice@0.1.4
 sacha:spin@2.0.4
 service-configuration@1.0.4

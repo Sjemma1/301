@@ -9,19 +9,19 @@
 	<td>{{createdAtFormatted}}</td>
 	<td>{{postCount}}</td>
 	<td>{{commentCount}}</td>
-	<td>{{getKarma}}</td>
-	<td>
-		{{#if invites}}
-		<h4>{{_ "invited"}} {{invitedCount}} {{_ "users"}}:</h4>
-		<ul>
-			{{#each invites}}
-				<li><a href="{{getInvitedUserProfileUrl}}">{{invitedName}}</a></li>
-			{{/each}}
-		</ul>
-		{{/if}}
-		<p>({{inviteCount}} {{_ "invites_left"}})</p>
-	</td>
-	<td>{{#if isInvited}}<i class="icon-check"></i>{{/if}}</td>
+	<!-- td>{{getKarma}}</td> -->
+<!-- 	<td>
+	{{#if invites}}
+	<h4>{{_ "invited"}} {{invitedCount}} {{_ "users"}}:</h4>
+	<ul>
+		{{#each invites}}
+			<li><a href="{{getInvitedUserProfileUrl}}">{{invitedName}}</a></li>
+		{{/each}}
+	</ul>
+	{{/if}}
+	<p>({{inviteCount}} {{_ "invites_left"}})</p>
+</td> -->
+<!-- 	<td>{{#if isInvited}}<i class="icon-check"></i>{{/if}}</td> -->
 	<td>{{#if userIsAdmin}}<i class="icon-check"></i>{{/if}}</td>
 	<td>
 		<ul>

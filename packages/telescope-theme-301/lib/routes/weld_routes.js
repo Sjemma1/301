@@ -63,7 +63,7 @@ Router.route('/algemene-voorwaarden', {
 });
 
 // Messages Route
-Router.route('/messages', {
+Router.route('/berichten', {
   name: 'messagesRedirect',
   loadingTemplate: 'loadingWeld',
   template: getTemplate('messagesRe'),

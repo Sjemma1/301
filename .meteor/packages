@@ -103,3 +103,6 @@ iron:router
 cunneen:mailgun
 accounts-ui
 softwarerero:accounts-t9n
+rzymek:moment-locale-nl
+rzymek:moment
+mrt:moment
