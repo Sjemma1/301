@@ -1,3 +1,13 @@
+// Projects Route
+Router.route('/', {
+  name: 'homeRedirect',
+  loadingTemplate: 'loadingWeld',
+  template: getTemplate('homeRe'),
+  data: function() {
+    return Meteor.user();
+  },
+});
+
 // Members Page
 Router.route('/profielen', {
   name: 'members',
@@ -57,16 +67,6 @@ Router.route('/messages', {
   name: 'messagesRedirect',
   loadingTemplate: 'loadingWeld',
   template: getTemplate('messagesRe'),
-  data: function() {
-    return Meteor.user();
-  },
-});
-
-// Projects Route
-Router.route('/', {
-  name: 'homeRedirect',
-  loadingTemplate: 'loadingWeld',
-  template: getTemplate('homeRe'),
   data: function() {
     return Meteor.user();
   },
