@@ -27,7 +27,7 @@ setLanguage = function (language) {
     });
 
   // T9n
-  T9n.setLanguage(language);
+  T9n.setLanguage("nl");
 }
 
 i18n = {
