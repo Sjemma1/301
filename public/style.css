@@ -60,13 +60,14 @@ header.homepage{
 
 .homepage-text{
 	color: white;
-	width: 55%;
+	max-width: 41rem;
 	margin: auto;
-	max-width: 59rem;
 }
 
 h1{
 	color: rgb(255,205,0) !important;
+	font-size: 4.5em;
+	margin-top: .5em;
 }
 
 .homepage-text h1{
@@ -131,27 +132,32 @@ height:100vh;
 .home-btn{
 	  font-size: 1.5em;
   font-weight: 500;
-  width: 65%;
+  width: 16rem;
   margin: auto;
 }
 
 .scrolldown {
   position: absolute;
-  width: 2em;
-  height: 2em;
-  bottom: 10%;
+  width: 2.5em;
+  height: 2.5em;
+  bottom: 3%;
   left: 50%;
   margin-left: -1em;
-  border-right: .20em solid white;
-  border-bottom: .20em solid white;
+  border-right: .40em solid white;
+  border-bottom: .40em solid white;
   border-radius: .5em 0;
   text-indent: -200%;
-  -webkit-animation: bouncbounce 2s infinite ease;
+  -webkit-animation: ease 5s infinite ease;
   -webkit-transform: rotate(45deg);
+}
+
+.scrolldown:hover {
+  bottom: 2%;
 }
 
 .photo-grid {
   width: 100%;
+  margin-bottom: 4rem;
 }
 
 .read-more {
@@ -608,23 +614,49 @@ height:100vh;
 }
 
 .grid, .grid-module, .grid-block{
-	  width: 40rem !important;
+	  max-width: 40rem !important;
 }
 
 .profile{
-  width: 30%;
-  max-width: 25rem;
+  width: 40%;
+  max-width: 21rem;
   order: -1;
-  margin-right: 3rem;
-  background-color: #EFEEEE;
+  margin-right: 5rem;
+}
+
+.profile_info{
+	  background-color: #EFEEEE;
   border: 1px solid #EFEEEE;
   padding: 1em;
   height: 100%;
   min-width: 16em;
+	margin-top: 1rem;
+}
+
+.row-klus .single-post.grid{
+	width: 80% !important;
+	  max-width: 75rem !important;
+}
+
+.post-body.markdown{
+	max-width: 40rem;
+}
+
+.button_project button.btn.btn-default.profiel.sidebar-btn{
+	min-width: 16rem;
 }
 
 .content.column.moreInfo, .content.column.faqRe, .content.column.posts_list_weld{
-	  padding: .25em 0 0 !important;
+	  padding-top: .25rem !important;
+}
+
+.content.column.user_profile{
+	padding: 0 !important;
+}
+
+.content{
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
 
 .profile_info{
@@ -636,7 +668,7 @@ height:100vh;
 }
 
 .footer.grid.static{
-	margin: auto;
+	width: 100% !important;
 	text-align: center !important;
 }
 
@@ -699,9 +731,6 @@ span.edit-post.comment-submit-button.btn.btn-primary.btn-submit a:hover{
 
 .sidebar{
 	background: #EFEEEE !important;
--webkit-box-shadow: -2px -1px 43px -12px rgba(0,0,0,0.75);
--moz-box-shadow: -2px -1px 43px -12px rgba(0,0,0,0.75);
-box-shadow: -2px -1px 43px -12px rgba(0,0,0,0.75);
 }
 
 div#faqpri{
@@ -714,7 +743,7 @@ div#faqpri{
 
 button, .button, .btn, .btn-outlined{
 	background: rgb(255,204,0);
-  border: 1px solid rgb(255,204,0);
+  border: none !important;
 	color: white !important;
 }
 
@@ -749,6 +778,79 @@ button.comment-submit-button.btn.btn-primary.btn-submit.sidebar-btn{
 	border: none;
 }
 
+a.comment-submit-button.btn.btn-primary.btn-submit.sidebar-btn.goto-edit{
+	background: #302824 !important;
+	border: none;
+	width: 12rem !important;
+	float: right;
+}
+
+a.comment-submit-button.btn.btn-primary.btn-submit.profiel.sidebar-btn{
+	width: 100%;
+	  font-size: 1.4em;
+  font-weight: 600;
+}
+.titel-klus{
+	float: left;
+}
+
+.datums{
+	clear: both;
+	font-size: .9rem;
+}
+
+.profiel {
+  margin: 0;
+}
+
+.sidebar.sidebar-achtergrond{
+	  background: rgba(150,150,150,.85) !important;
+	  -webkit-box-shadow: -2px -1px 43px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px -1px 43px -16px rgba(0,0,0,0.75);
+  box-shadow: -2px -1px 43px -16px rgba(0,0,0,0.75);
+}
+
+.back-arrow{
+	color: rgb(255,205,0);
+}
+
+div#testimonial-link{
+	width: 100% !important;
+}
+
+.profile-header{
+	  min-height: 400px;
+}
+
+.profile-skill{
+	background-color: #302824 !important;
+}
+
+.profile-location .important{
+	color: #302824 !important;
+}
+
+.user-profile-posts h3, .user-profile-comments h3, .user-profile-votes h3, td{
+	text-transform: none;
+	  letter-spacing: 0;
+}
+
+.user-profile .profile-name{
+	color: #302824 !important;
+}
+
+@media screen and (min-width: 5000px) {
+.homepage-text {
+  max-width: 27rem;
+}
+}
+
+@media screen and (min-width: 4000px)and (max-width: 4999px) {
+.homepage-text {
+  max-width: 37rem;
+}
+}
+
 @media screen and (max-width: 1101px) {
     .meer{
 	bottom: -88px !important;
@@ -758,6 +860,18 @@ button.comment-submit-button.btn.btn-primary.btn-submit.sidebar-btn{
 		  -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+	}
+	
+		.row-klus{
+		width: 100% !important;
+		
+	}
+	
+	.profile{
+		order: 1;
+		width: 100%;
+		 max-width: 100%;
+		  margin-right: 0rem;
 	}
 
 }
@@ -777,18 +891,72 @@ button.comment-submit-button.btn.btn-primary.btn-submit.sidebar-btn{
 max-width: 53%;
   left: 23%;
 	}
+	
+}
+
+@media screen and (max-width: 900px) {
+.homepage-text {
+  max-width: 33rem;
+}
 }
 
 
+@media screen and (max-width: 800px) {
+	.fa-5x {
+  font-size: 4em;
+}
+	.stap p {
+  margin-top: 50px;
+}
+
+	
+.main-gallery {
+    width: 85vw !important;
+}
+
+.circle{
+	height: 12rem;
+}
+	header.homepage{
+		height: 92vh;
+	}
+	.banner-overlay {
+		height: 92vh;
+	}
+	
+	.logo-wrap {
+  background-color: rgb(255,205,0) !important;
+}
+	
+	header a img{
+		height: 40px !important;
+	}
+}
+
+.flickity-viewport {
+  height: 415px !important;
+}
 
 @media screen and (max-width: 600px) {
-    .read-more{
-	width: 100%;
+	.stap p {
+  margin-top: 100px;
 }
+	
+	.circle {
+  height: 15rem;
+}
+
+}
+
+@media screen and (max-width: 500px) {
 		.werk{
 		font-size: 1em;
 		max-width: 60%;
 		left: 19%;
+	}
+	
+	h1{
+		font-size: 4.5em;
 	}
 
 }

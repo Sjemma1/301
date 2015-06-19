@@ -129,6 +129,15 @@
   }
 }
 
+.sidebar-btn-extra {
+  opacity: 0.85;
+  transition: opacity 500ms;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
 .menu-description {
   display: none;
   position: absolute;

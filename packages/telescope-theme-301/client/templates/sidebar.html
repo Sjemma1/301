@@ -1,5 +1,6 @@
 <template name="sidebar">
-  <nav class="sidebar">
+	<div class="sidebar sidebar-achtergrond">
+  <nav class="sidebar sidebar-btn-extra">
     <div class="close-icon mobile-only">×</div>
     {{#if isDesktop}}{{> UI.dynamic template=logo}}{{/if}}
     <ul class="sidebar-menu srollable-vertical no-scrollbar">
@@ -31,4 +32,5 @@
       </div>
     </ul>
   </nav>
+		</div>
 </template>
