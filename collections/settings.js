@@ -31,31 +31,31 @@ settingsSchemaObject = {
       instructions: 'Korte beschrijving van de website voor SEO'
     }
   },
-  requireViewInvite: {
-    type: Boolean,
-    optional: true,
-    autoform: {
-      group: 'invites',
-      leftLabel: 'Verplicht invite'
-    }
-  },
-  requirePostInvite: {
-    type: Boolean,
-    optional: true,
-    autoform: {
-      group: 'invites',
-      leftLabel: 'Verplicht klus uitnodiging'
-    }
-  },
-  requirePostsApproval: {
-    type: Boolean,
-    optional: true,
-    autoform: {
-      group: 'general',
-      instructions: "Posts must be approved by admin",
-      leftLabel: "Verplicht klus goedkeuring"
-    }
-  },
+  // requireViewInvite: {
+  //   type: Boolean,
+  //   optional: true,
+  //   autoform: {
+  //     group: 'invites',
+  //     leftLabel: 'Verplicht invite'
+  //   }
+  // },
+  // requirePostInvite: {
+  //   type: Boolean,
+  //   optional: true,
+  //   autoform: {
+  //     group: 'invites',
+  //     leftLabel: 'Verplicht klus uitnodiging'
+  //   }
+  // },
+  // requirePostsApproval: {
+  //   type: Boolean,
+  //   optional: true,
+  //   autoform: {
+  //     group: 'general',
+  //     instructions: "Posts must be approved by admin",
+  //     leftLabel: "Verplicht klus goedkeuring"
+  //   }
+  // },
   defaultEmail: {
     type: String,
     optional: true,
@@ -84,32 +84,33 @@ settingsSchemaObject = {
       private: true
     }
   },
-  defaultView: {
-    type: String,
-    optional: true,
-    autoform: {
-      group: 'posts',
-      instructions: 'The view used for the front page',
-      options: _.map(viewsMenu, function (view) {
-        return {
-          value: camelCaseify(view.label),
-          label: view.label
-        };
-      })
-    }
-  },
-  postsLayout: {
-    type: String,
-    optional: true,
-    autoform: {
-      group: 'posts',
-      instructions: 'The layout used for post lists',
-      options: [
-        {value: 'posts-list', label: 'List'},
-        {value: 'posts-grid', label: 'Grid'}
-      ]
-    }
-  },
+  // defaultView: {
+  //   type: String,
+  //   defaultValue: 'new',
+  //   optional: false,
+  //   autoform: {
+  //     group: 'posts',
+  //     instructions: 'The view used for the front page',
+  //     options: _.map(viewsMenu, function (view) {
+  //       return {
+  //         value: camelCaseify(view.label),
+  //         label: view.label
+  //       };
+  //     })
+  //   }
+  // },
+  // postsLayout: {
+  //   type: String,
+  //   optional: false,
+  //   autoform: {
+  //     group: 'posts',
+  //     instructions: 'The layout used for post lists',
+  //     options: [
+  //       {value: 'posts-list', label: 'List'},
+  //       {value: 'posts-grid', label: 'Grid'}
+  //     ]
+  //   }
+  // },
   postInterval: {
     type: Number,
     optional: true,
@@ -137,14 +138,14 @@ settingsSchemaObject = {
       instructions: 'Maximum number of posts a user can post in a day (default to 30).'
     }
   },
-  startInvitesCount: {
-    type: Number,
-    defaultValue: 3,
-    optional: true,
-    autoform: {
-      group: 'invites'
-    }
-  },
+  // startInvitesCount: {
+  //   type: Number,
+  //   defaultValue: 3,
+  //   optional: true,
+  //   autoform: {
+  //     group: 'invites'
+  //   }
+  // },
   postsPerPage: {
     type: Number,
     defaultValue: 10,
@@ -153,52 +154,52 @@ settingsSchemaObject = {
       group: 'posts'
     }
   },
-  logoUrl: {
-    type: String,
-    optional: true,
-    autoform: {
-      group: 'logo'
-    }
-  },
-  logoHeight: {
-    type: Number,
-    optional: true,
-    autoform: {
-      group: 'logo'
-    }
-  },
-  logoWidth: {
-    type: Number,
-    optional: true,
-    autoform: {
-      group: 'logo'
-    }
-  },
-  faviconUrl: {
-    type: String,
-    optional: true,
-    autoform: {
-      group: 'logo'
-    }
-  },
-  language: {
-    type: String,
-    defaultValue: 'en',
-    optional: true,
-    autoform: {
-      group: 'general',
-      instructions: 'The app\'s language. Defaults to English.',
-      options: function () {
-        var languages = _.map(TAPi18n.getLanguages(), function (item, key) {
-          return {
-            value: key,
-            label: item.name
-          }
-        });
-        return languages
-      }
-    }
-  },
+  // logoUrl: {
+  //   type: String,
+  //   optional: true,
+  //   autoform: {
+  //     group: 'logo'
+  //   }
+  // },
+  // logoHeight: {
+  //   type: Number,
+  //   optional: true,
+  //   autoform: {
+  //     group: 'logo'
+  //   }
+  // },
+  // logoWidth: {
+  //   type: Number,
+  //   optional: true,
+  //   autoform: {
+  //     group: 'logo'
+  //   }
+  // },
+  // faviconUrl: {
+  //   type: String,
+  //   optional: true,
+  //   autoform: {
+  //     group: 'logo'
+  //   }
+  // },
+  // language: {
+  //   type: String,
+  //   defaultValue: 'en',
+  //   optional: true,
+  //   autoform: {
+  //     group: 'general',
+  //     instructions: 'The app\'s language. Defaults to English.',
+  //     options: function () {
+  //       var languages = _.map(TAPi18n.getLanguages(), function (item, key) {
+  //         return {
+  //           value: key,
+  //           label: item.name
+  //         }
+  //       });
+  //       return languages
+  //     }
+  //   }
+  // },
   backgroundCSS: {
     type: String,
     optional: true,
